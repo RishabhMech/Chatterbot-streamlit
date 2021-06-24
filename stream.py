@@ -15,8 +15,8 @@ from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot.storage import StorageAdapter
 
 import json
+import base64
 
-#get_text is a simple function to get user input from text_input
 class stream50():
 
     def __init__(self):
@@ -25,6 +25,7 @@ class stream50():
         #self.weight_file_path=r"Downloads\weights_YOLO/yolov3_training_final.weights" 
         
 
+    #get_text is a simple function to get user input from text_input
     def get_text(self):
         input_text = st.text_input("You: ","So, what's in your mind")
         return input_text
