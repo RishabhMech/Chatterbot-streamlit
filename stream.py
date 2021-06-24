@@ -25,11 +25,11 @@ class stream50():
         #self.weight_file_path=r"Downloads\weights_YOLO/yolov3_training_final.weights" 
         
 
-    def get_text():
+    def get_text(self):
         input_text = st.text_input("You: ","So, what's in your mind")
         return input_text
 
-    def process():
+    def process(self):
         st.sidebar.title("NLP Bot")
         st.title("""
         NLP Bot  
@@ -51,7 +51,7 @@ class stream50():
             st.title("Your bot is ready to talk to you")
             ind = ind +1
                 
-        user_input = get_text()
+        user_input = self.get_text()
         if True:
             st.text_area("Bot:", value=bot.get_response(user_input), height=200, max_chars=None, key=None)
         else:
