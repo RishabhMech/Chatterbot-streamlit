@@ -20,6 +20,7 @@ import json
 class stream50():
 
     def __init__(self):
+        pass
         #self.input_path=frame  
         #self.weight_file_path=r"Downloads\weights_YOLO/yolov3_training_final.weights" 
         
