@@ -36,7 +36,7 @@ class stream50():
         NLP Bot is an NLP conversational chatterbot. Initialize the bot by clicking the "Initialize bot" button. 
         """)
         file_ = open(r"media/hairstyle.gif", "rb") #C:\Users\rishabh.pandey\Downloads\Tasks\Chatbot\streamlit/hairstyle.gif
-        contents = file_.read()
+        contents = file_.read() 
         data_url = base64.b64encode(contents).decode("utf-8")
         file_.close()
         st.markdown(
